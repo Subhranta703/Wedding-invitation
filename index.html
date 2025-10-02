@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wedding Invitation</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@400;700&family=Pacifico&family=Lobster&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Toolbar -->
+  <div class="toolbar">
+    <select id="fontFamily">
+  <option value="Arial">Arial</option>
+  <option value="Times New Roman">Times New Roman</option>
+  <option value="Cursive">Cursive</option>
+  <option value="Georgia">Georgia</option>
+  <option value="'Great Vibes', cursive">Great Vibes</option>
+  <option value="'Dancing Script', cursive">Dancing Script</option>
+  <option value="'Pacifico', cursive">Pacifico</option>
+  <option value="'Lobster', cursive">Lobster</option>
+  <option value="'Playfair Display', serif">Playfair Display</option>
+</select>
+
+    <input type="color" id="fontColor" value="#000000"/>
+    <input type="number" id="fontSize" value="20" min="10" max="60"/>
+    <button class="add-box-btn" id="addBox">+ Add Text Box</button>
+  </div>
+
+  <!-- Swiper -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="Images/Card1.png" class="card-bg"/>
+        <div class="text-box" contenteditable="true">Your Invitation Text</div>
+      </div>
+      <div class="swiper-slide">
+        <img src="Images/card2.jpg" class="card-bg"/>
+        <div class="text-box" contenteditable="true">Your Invitation Text</div>
+      </div>
+      <div class="swiper-slide">
+        <img src="Images/Card3.png" class="card-bg"/>
+        <div class="text-box" contenteditable="true">Your Invitation Text</div>
+      </div>
+    </div>
+
+    <!-- Pagination & Navigation -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

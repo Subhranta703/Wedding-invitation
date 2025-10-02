@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+}
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.card-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-box {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  padding: 5px 10px;
+  min-width: 80px;
+  min-height: 30px;
+  border: 1px dashed #000;
+  background: transparent;
+  color: black;
+  resize: both;
+  overflow: auto;
+  cursor: move;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.add-box-btn {
+  margin-left: auto;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+.swiper {
+  width: 450px;  /* 9 ratio */
+  height: 750px; /* 15 ratio */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  position: relative;
+}
+
+.card-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 10px;
+  min-width: 200px;
+  min-height: 50px;
+  text-align: center;
+  background: rgba(255,255,255,0.6);
+  border-radius: 5px;
+  cursor: move;   /* 👈 for drag */
+  z-index: 1;
+}
+
+
+/* Toolbar */
+.toolbar {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.toolbar select, .toolbar input {
+  padding: 4px;
+}
